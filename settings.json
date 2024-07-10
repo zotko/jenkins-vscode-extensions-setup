@@ -13,7 +13,7 @@
     "default": {
       "isDefault": true,  // Set this job as the default
       "runWith": [
-        "local"  // Use the 'local' host configuration
+        "local"  // Use the 'local' host configuration defined above
       ],
       "name": "default-pipeline"  // Name of the pipeline job in Jenkins
     }
@@ -21,6 +21,12 @@
   
   // Configuration for Jenkins Pipeline Linter Connector extension
   "jenkins.pipeline.linter.connector.url": "http://localhost:8080/pipeline-model-converter/validate",  // URL for the Pipeline Linter
-  "jenkins.pipeline.linter.connector.user": "admin",  // Jenkins username for linter
-  "jenkins.pipeline.linter.connector.pass": "admin"  // Jenkins password for linter (consider using environment variables)
+  "jenkins.pipeline.linter.connector.user": "admin",
+  "jenkins.pipeline.linter.connector.pass": "admin"
+  
+  // File associations for Groovy syntax highlighting
+  "files.associations": {
+    "Jenkinsfile": "groovy",  // Treat Jenkinsfile as Groovy
+    "*.jenkins": "groovy"  // Treat files with .jenkins extension as Groovy
+  }
 }
