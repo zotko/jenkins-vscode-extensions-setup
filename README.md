@@ -8,6 +8,7 @@ This repository contains VSCode settings for running [Jenkins Runner](https://ma
 2. Install the following VSCode extensions:
    - [Jenkins Runner](https://marketplace.visualstudio.com/items?itemName=dave-hagedorn.jenkins-runner)
    - [Jenkins Pipeline Linter Connector](https://marketplace.visualstudio.com/items?itemName=janjoerke.jenkins-pipeline-linter-connector)
+   - [Code-Groovy](https://marketplace.visualstudio.com/items?itemName=NicolasVuillamy.vscode-groovy-lint) (for Groovy syntax highlighting)
 3. Copy the contents of `settings.json` into your VSCode settings.
 4. **Important:** Manually create a pipeline job named "default-pipeline" in your Jenkins instance. The Jenkins Runner extension will use this job by default.
 
@@ -16,14 +17,15 @@ This repository contains VSCode settings for running [Jenkins Runner](https://ma
 The `settings.json` file contains the following configurations:
 
 ### Jenkins Runner
-
 - Host configuration for local Jenkins instance
 - Default job configuration
 
 ### Jenkins Pipeline Linter Connector
-
 - URL for the Pipeline Linter
 - Authentication details for accessing Jenkins
+
+### Groovy Syntax Highlighting
+- File associations for Jenkinsfile and *.jenkins files to use Groovy syntax highlighting
 
 ## Usage
 
@@ -31,6 +33,7 @@ With these settings in place, you can:
 
 1. Run Jenkins jobs directly from VSCode using the Jenkins Runner extension.
 2. Lint your Jenkinsfile using the Jenkins Pipeline Linter Connector extension.
+3. Enjoy Groovy syntax highlighting for your Jenkinsfile and *.jenkins files.
 
 Refer to the respective extension documentation for detailed usage instructions.
 
