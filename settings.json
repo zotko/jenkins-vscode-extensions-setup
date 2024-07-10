@@ -22,7 +22,7 @@
   // Configuration for Jenkins Pipeline Linter Connector extension
   "jenkins.pipeline.linter.connector.url": "http://localhost:8080/pipeline-model-converter/validate",  // URL for the Pipeline Linter
   "jenkins.pipeline.linter.connector.user": "admin",
-  "jenkins.pipeline.linter.connector.pass": "admin"
+  "jenkins.pipeline.linter.connector.pass": "admin",
   
   // File associations for Groovy syntax highlighting
   "files.associations": {
