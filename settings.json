@@ -1,0 +1,26 @@
+{
+  // Configuration for Jenkins Runner extension
+  "jenkins-runner.hostConfigs": {
+    "local": {
+      "url": "http://localhost:8080",  // URL of your local Jenkins instance
+      "user": "admin",  // Jenkins username
+      "password": "admin"  // Jenkins password (consider using environment variables for security)
+    }
+  },
+  
+  // Job configuration for Jenkins Runner
+  "jenkins-runner.jobs": {
+    "default": {
+      "isDefault": true,  // Set this job as the default
+      "runWith": [
+        "local"  // Use the 'local' host configuration
+      ],
+      "name": "default-pipeline"  // Name of the pipeline job in Jenkins
+    }
+  },
+  
+  // Configuration for Jenkins Pipeline Linter Connector extension
+  "jenkins.pipeline.linter.connector.url": "http://localhost:8080/pipeline-model-converter/validate",  // URL for the Pipeline Linter
+  "jenkins.pipeline.linter.connector.user": "admin",  // Jenkins username for linter
+  "jenkins.pipeline.linter.connector.pass": "admin"  // Jenkins password for linter (consider using environment variables)
+}
