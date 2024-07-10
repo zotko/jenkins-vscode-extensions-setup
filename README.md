@@ -9,6 +9,7 @@ This repository contains VSCode settings for running [Jenkins Runner](https://ma
    - [Jenkins Runner](https://marketplace.visualstudio.com/items?itemName=dave-hagedorn.jenkins-runner)
    - [Jenkins Pipeline Linter Connector](https://marketplace.visualstudio.com/items?itemName=janjoerke.jenkins-pipeline-linter-connector)
 3. Copy the contents of `settings.json` into your VSCode settings.
+4. **Important:** Manually create a pipeline job named "default-pipeline" in your Jenkins instance. The Jenkins Runner extension will use this job by default.
 
 ## Configuration
 
